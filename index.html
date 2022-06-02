@@ -1,0 +1,379 @@
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" type="text/css" href="./css/main.css" />
+    <link rel="stylesheet" type="text/css" href="./css/slick.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="../site-do-zero-master/menu/menu-dropdown-responsivo.html">
+    <style type="text/css"></style>
+    <!--iNCREMENTADO AQUI-->
+
+    <title>GVPHOTOS</title>
+</head>
+
+<style>
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+*,
+*::after,
+*::before {
+
+  box-sizing: inherit;
+}
+
+.navigation__checkbox {
+  display: none;
+}
+.navigation__button {
+  background-color: #fff;
+  height: 5rem;
+  width: 5rem;
+  position: fixed;
+  top: 6rem;
+  right: 6rem;
+  border-radius: 50%;
+  z-index: 2000;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
+  text-align: center;
+  cursor: pointer;
+}
+.navigation__background {
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  position: fixed;
+  top: 1rem;
+  right: 2rem;
+  background-image: radial-gradient(#0B86DB, #580BDB);
+  z-index: 1000;
+  transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
+}
+.navigation__nav {
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1500;
+  opacity: 0;
+  width: 0;
+  transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.navigation__list {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  list-style: none;
+  text-align: center;
+  width: 100%;
+}
+.navigation__item {
+  margin: 1rem;
+}
+.navigation__link:link, .navigation__link:visited {
+  display: inline-block;
+  font-size: 3rem;
+  font-weight: 300;
+  padding: 0.8rem 2rem;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #fff 50%);
+  background-size: 223%;
+  transition: all 0.4s;
+}
+.navigation__link:link span, .navigation__link:visited span {
+  margin-right: 1.5rem;
+  display: inline-block;
+}
+.navigation__link:hover, .navigation__link:active {
+  background-position: 100%;
+  color: #000341;
+  transform: translateX(1rem);
+}
+.navigation__checkbox:checked ~ .navigation__background {
+  transform: scale(80);
+}
+.navigation__checkbox:checked ~ .navigation__nav {
+  opacity: 1;
+  width: 100%;
+}
+.navigation__icon {
+  position: relative;
+  margin-top: 2.5rem;
+}
+.navigation__icon, .navigation__icon::before, .navigation__icon::after {
+  width: 3rem;
+  height: 2px;
+  background-color: #B0BEC5;
+  display: inline-block;
+}
+.navigation__icon::before, .navigation__icon::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  transition: all 0.2s;
+}
+.navigation__icon::before {
+  top: -0.8rem;
+}
+.navigation__icon::after {
+  top: 0.8rem;
+}
+.navigation__button:hover .navigation__icon::before {
+  top: -1rem;
+}
+.navigation__button:hover .navigation__icon::after {
+  top: 1rem;
+}
+.navigation__checkbox:checked + .navigation__button .navigation__icon {
+  background-color: transparent;
+}
+.navigation__checkbox:checked + .navigation__button .navigation__icon::before {
+  top: 0;
+  transform: rotate(135deg);
+}
+.navigation__checkbox:checked + .navigation__button .navigation__icon::after {
+  top: 0;
+  transform: rotate(-135deg);
+}
+
+</style>
+
+<body>
+
+    <div class="navigation">
+        <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+
+        <label for="navi-toggle" class="navigation__button">
+            <span class="navigation__icon">&nbsp;</span>
+        </label>
+
+        <div class="navigation__background">&nbsp;</div>
+
+        <nav class="navigation__nav">
+            <ul class="navigation__list">
+                <li class="navigation__item"><a href="C:\Users\GVPHOTOS\Downloads\site-do-zero-master-20211013T120550Z-001\site-do-zero-master\index.html" class="navigation__link"><span></span>Home</a></li>
+                <li class="navigation__item"><a href="#col-100 footer" class="navigation__link"><span></span>Sobre</a></li>
+                <li class="navigation__item"><a href="#content texto-destaque" class="navigation__link"><span></span>Serviços</a></li>
+                <li class="navigation__item"><a href="https://drive.google.com/drive/u/0/my-drive"  target="_Blank" class="navigation__link"><span></span>Downloads</a></li>
+                <li class="navigation__item"><a href="#col-4" class="navigation__link"><span></span>Suporte</a></li>
+                <li class="navigation__item"><a href="../site-do-zero-master/UDEMY/index.html" target="_Blank" class="navigation__link"><span></span>Cadastre-se</a></li>
+                </ul>
+        </nav>
+    </div>
+
+    <header class="menu-principal">
+
+        <main>
+            <div class="header-1">
+                <div class="logo">
+                    <a href="https://gvphotos.sumup.link/" title="VISITE NOSSA LOJA ONLINE!" target="_blank"><img src=".\IMG\logo.png"/></a>
+                </div>
+                <div class="redes-sociais">
+                    <ul>
+                        <li>
+                            <div class="what">
+                                <a href="https://api.whatsapp.com/send?phone=5588997779566" title="WHATSAPP" target="_blank">
+                                <img src="./img/WhatsApp.png" />
+                            </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="face">
+                            <a href="https://www.facebook.com/gleidson.farias1" title="FACEBOOK" target="_blank">
+                                <img src="./img/face.png" />
+                            </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="insta">
+                            <a href="https://www.instagram.com/gvphotos2019/" title="INSTAGRAN" target="_blank">
+                                <img src="./img/Instagram.png" />
+                            </a>
+                            </div>  
+                        </li>
+                        <li>
+                            <div class="insta">
+                            <a href="https://mail.google.com/mail/u/0/#inbox" title="GMAIL" target="_blank">
+                                <img src="./img/Gmail.png" />
+                            </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="sumup">
+                            <a href="https://gvphotos.sumup.link/" title="COMPRE ONLINE COM MENOR PREÇO E SEGURANÇA" target="_blank">
+                                <img src="./img/Sumup.png" />
+                            </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </header>
+    <main>
+    <header>
+    <div class="bem-vindo">
+        <h1 ><strong>Seja muito bem-vindo!</strong></h1>
+    <p>Trabalhamos com dedicação <br>e respeito aos nossos clientes!</p>
+    </div>
+    </main>
+    </header>
+
+    <main class="col-100 menu-urls">
+
+        <div class="header-2">
+            
+            <div class="busca">
+                <input placeholder="Pesquise aqui!" type="text" />
+            </div>
+        </div>
+    </main>
+
+    <div class="col-100">
+        <div class="slider-principal">
+            <img src="./img/banner.png" />
+            <img src="./img/banner1.png" />
+            <img src="./img/banner2.png" />
+            <img src="./img/banner3.png" />
+            <img src="./img/banner4.png" />
+        </div>
+    </div>
+    <div class="col-100">
+        <div class="content texto-destaque">
+            <h1><strong>Confira alguns dos nossos trabalhos</strong></h1>
+            <div class="col-3 bloco-texto">
+                <img src="./img/content-1.png" />
+                <h3><b>REVELAÇÂO DIGITAL</b>, ADESIVOS, BANNERS, MOLDURAS, 
+                    RESTAURAÇÕES, FOTOS 3 x 4, INFORMÁTICA, ENTRE OUTROS SERVIÇOS</h3>
+                <p>Obs.: Fotos e Banners você encontra de todos os tamanhos.
+                </p>
+            </div>
+            <div class="col-3 bloco-texto" style="margin-top: 6em;">
+                <img src="./img/content-2.png" />
+                <h3><b>Atendimento</b> Personalizado!</h3>
+                <p>Faça logo o seu orçamento e concorra a prêmios todo mês!
+                </p>
+            </div>
+            <div class="col-3 bloco-texto">
+                <img src="./img/content-3.png" />
+                <h3><b>TRATAMENTO DE IMAGENS</b> COM QUALIDADE GARANTIDA!</h3>
+                <p>RESTAURAÇÕES DE FOTOS ANTIGAS E MUITO MAIS EM FOTO DIGITAL.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-100 bloco-imagens-texto">
+        <div class="content" style="margin-left: 24%; float: left;">
+            <div class="col-3 bloco-texto bloco-imagem">
+                <img src="./img/imagem1.png">
+                <p><b>Casamento</b></p>
+                <p>Dia festivo, família comemorando em harmonia esta data especial!
+                </p>
+            </div>
+            <div class="col-3 bloco-texto bloco-imagem">
+                <img src="./img/imagem2.png">
+                <p><b>Ensaio Fotográfico</b></p>
+                <p>Foto espontânea, cheia de verdade!
+                </p>
+            </div>
+            <div class="col-3 bloco-texto bloco-imagem">
+                <img src="./img/imagem3.png">
+                <p><b>Grupo de Oração - Otavilândia</b></p>
+                <p>Dia cheio de louvor e muita comemoração nos festejos da Igreja!
+                </p>
+            </div>
+        </div>
+        <div class="content" style="margin-left: 24%; float: left;">
+            <div class="col-3 bloco-texto bloco-imagem">
+                <img src="./img/imagem4.png">
+                <p><b>Aniversário infantil</b></p>
+                <p>Data inesquecível para a aniversariante de 1 aninho. Maria Hellena trasmitia a todos muita alegria.
+                </p>
+            </div>
+            <div class="col-3 bloco-texto bloco-imagem">
+                <img src="./img/imagem5.png">
+                <p><b>Casamento Civil</b></p>
+                <p>A felicidade dos noivos em comemoração era notável.
+                </p>
+            </div>
+            <div class="col-3 bloco-texto bloco-imagem">
+                <img src="./img/imagem6.png">
+                <p><b>Batismo e 1° Aninho</b></p>
+                <p>Comemoração de 1° ano de vida e batizado.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-100 bloco-logos">
+        <div class="content">
+            <div class="col-4">
+                <img alt="logo" title="logo" src="img/logo4.png" />
+            </div>
+            <div class="col-4">
+                <img alt="logo" title="logo" src="img/logo4.png" />
+            </div>
+            <div class="col-4">
+                <br />
+                <img alt="logo" title="logo" src="img/logo4.png" />
+            </div>
+            <div class="col-4">
+                <img alt="GVPHOTOS" title="GVPHOTOS" src="img/logo4.png" />
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="col-100 footer">
+            <div class="content">
+                <div class="col-4">
+                    <h3><b>Publicação mais acessada</b></h3>
+                    <p>Casamento</p>
+                    <p class="clock">14-Março 2020<p>
+                </div>
+                <div class="col-4">
+                    <h3><b>GVPHOTOS</b></h3>
+                    <p>Qualidade e menor preço só aqui!</p>
+                </div>
+                <div class="col-4">
+                    <h3><b>Sobre nós</b></h3>
+                    <p>
+                        A mais de 10 anos conquistando novos clientes, com compromisso, dedicação e responsábilidade no trabalho.
+                    </p>
+                </div>
+                <div class="col-4">
+                    <h3><b>Fale conosco</b></h3>
+                    <p>
+                        Entre em contato conosco. Faça já seu orçamento e concorra a prêmios todo mês.
+                    </p>
+                    <a href="https://www.google.com/maps/place/REVELA%C3%87%C3%82O+DIGITAL/@-4.2589977,-40.5393124,93m/data=!3m1!1e3!4m8!1m2!2m1!1sotavilandia+pires+ferreira!3m4!1s0x0:0x5eeb706753d6a893!8m2!3d-4.2590117!4d-40.5389479" title="Localização" target="_Blank">
+                    <p class="local">Otavilândia, Pires Ferreira, Ce<p>
+                    </a>
+                    <a href="https://mail.google.com/mail/u/0/#inbox" title="Gmail" target="_Blank">
+                        <p class="emailico">gvphotosedcoes@gmail.com<p>
+                    </a>
+                    <a href="https://web.whatsapp.com/" title="WhatsApp" target="_Blank">
+                             <p class="telefoneico">(88)9 97779566)</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="col-100 footer-2">
+        <div class="content">
+
+            <p><a href="https://www.copyrightservice.net/pt/copyright_notice" title="Avisos de direitos autorais" 
+                target="_Blank">Avisos de direitos autorais</a> - &copy; 2020 GVPHOTOS. Todos os direitos reservados.
+            </p>
+        </div>
+    </div>
+    <script type="text/javascript" src="./js/jquery.js"></script>
+    <script type="text/javascript" src="./js/jquery-migrate.js"></script>
+    <script type="text/javascript" src="./js/slick.min.js"></script>
+    <script type="text/javascript" src="./js/main.js"></script>
+    <script src="https://www.javapoly.com/javapoly.js"></script>
+    <script src="valida_form.js" type="text/javascript"></script>
+        <!--INCREMENTADO DO MENU -->
+
+    </body>
+</html>
